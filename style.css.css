@@ -1,0 +1,162 @@
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #243247;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #12345a;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #d5deea;
+    padding: 12px;
+    text-align: left;
+}
+
+thead {
+    background-color: #12345a;
+    color: white;
+}
+
+/* Advanced selector 1: alternating table rows */
+tbody tr:nth-child(even) {
+    background-color: #eaf1fa;
+}
+
+/* Advanced selector 2: highlight a row when hovered */
+tbody tr:hover {
+    background-color: #d3e6ff;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bdc9d8;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Advanced selector 3: highlight required inputs */
+input:required,
+select:required {
+    border-left: 4px solid #2878c8;
+}
+
+/* Advanced selector 4: style focused form fields */
+input:focus,
+select:focus {
+    outline: 2px solid #2878c8;
+    outline-offset: 2px;
+}
+
+/* Advanced selector 5: style the submit button */
+button[type="submit"] {
+    background-color: #176b45;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #104c31;
+}
+
+/* Multimedia styling */
+img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 8px;
+    margin: 15px auto;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: none;
+    margin: 15px auto;
+}
+
+footer {
+    background-color: #12345a;
+    color: white;
+    text-align: center;
+    padding: 18px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 7px;
+    }
+}
